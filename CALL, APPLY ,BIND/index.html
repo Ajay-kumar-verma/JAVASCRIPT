@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+// const Student1={
+//   name:"Ajay",
+//   addr:"Patna",
+//   mob:9973541431,
+//   Details:function(){
+//     //   this keyword is used for self referencing 
+//     console.log("My name is : "+this.name+"\n"+"Address is : "+this.addr+"\nMy mobile no is: " +this.mob);
+//   }
+  
+// }
+
+// const Student2={
+//   name:"Vikash",
+//   addr:"Delhi",
+//   mob:9876543210,
+//   Details:function(){
+//     //   this keyword is used for self referencing 
+//     console.log("My name is : "+this.name+"\n"+"Address is : "+this.addr+"\nMy mobile no is: " +this.mob);
+//   }
+  
+// }
+// const Student3={
+//   name:"Rahul",
+//   addr:"UP",
+//   mob:8907612345,
+//   Details:function(){
+//     //   this keyword is used for self referencing 
+//     console.log("My name is : "+this.name+"\n"+"Address is : "+this.addr+"\nMy mobile no is: " +this.mob);
+//   }
+  
+// }
+// const Student4={
+//   name:"Yadav",
+//   addr:"MP",
+//   mob:9971234321,
+//   Details:function(){
+//     //   this keyword is used for self referencing 
+//     console.log("My name is : "+this.name+"\n"+"Address is : "+this.addr+"\nMy mobile no is: " +this.mob);
+//   }
+  
+// }
+
+// Student1.Details();
+// Student2.Details();
+// Student3.Details();
+// Student4.Details();
+
+
+// Above code is not Dry code 
+// One method is repeating in all object 
+
+
+// USING CALL , APPLY ,BIND
+
+const Student1={
+  name:"Ajay",  addr:"Patna",
+  mob:9973541431
+  }
+
+  const Student2={
+  name:"Vikash",   addr:"Delhi",
+  mob:9876543210,
+  }
+
+  const Student3={
+  name:"Rahul",   addr:"UP",
+  mob:8907612345
+  }
+
+  const Student4={
+  name:"Yadav",
+  addr:"MP",
+  mob:9971234321
+  }
+
+  const Details= function(index,state){
+    //   this keyword is used for self referencing 
+    console.log("THIS IS "+index + state+"\nMy name is : "+this.name+"\n"+"Address is : "+this.addr+"\nMy mobile no is: " +this.mob);
+  }
+   
+ console.log("CALl ") 
+Details.call(Student1,"FIRST "," STUDENT")
+Details.call(Student2,"SECOND"," STUDENT")
+Details.call(Student3,"THIRD ","STUDENT")
+Details.call(Student4,"FOURTH"," STUDENT")
+
+
+// In apply we can pass multiple arguments in an array 
+
+
+console.log("\n\nAPPLY ") 
+Details.apply(Student1,["FIRST "," STUDENT"])
+Details.apply(Student2,["SECOND"," STUDENT"])
+Details.apply(Student3,["THIRD ","STUDENT"])
+Details.apply(Student4,["FOURTH"," STUDENT"])
+
+
+
+// bind is similar to call 
+// But it return data not print data
+
+console.log("\n\nBIND ") 
+Details.bind(Student1,"FIRST "," STUDENT")();
+Details.bind(Student2,"SECOND"," STUDENT")();
+Details.bind(Student3,"THIRD ","STUDENT")();
+const data = Details.bind(Student4,"FOURTH"," STUDENT")
+data();
+
+
+
+</script>
+
+</body>
+</html>
