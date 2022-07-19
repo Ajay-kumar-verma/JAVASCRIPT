@@ -65,6 +65,7 @@ static En(text,key,type){
 export default Encp_Decyp;
 
 let plt="Ajay kumar verma 123";
+
 let cipher =Encp_Decyp.En(plt,"!@#$%^11","t2")
 let plaintext=Encp_Decyp.De(cipher,"!@#$%^11","t2")
 
