@@ -1,3 +1,14 @@
+var a;
+console.log("0",a)
+
+a="kumar verma"
+console.log("0",a)
+
+// in memory allocation phase all varible initialization with undeifne 
+// in 2 phase code / execution phase we get tje output 
+
+
+
 // alert("ajay kumar verma");
 
 var a="aaa"
@@ -30,6 +41,7 @@ var fn1=()=>{
 // BECAUSE OF FIRST ORDER FUNCTION WE CAN DO SHOW
 // function can be trated as varibale 
 
+
 // and its all about EXECUTION CONTEXT 
 
 
@@ -38,8 +50,25 @@ var fn2=()=>{
     console.log("I Am function 2 ");
 }
 
+// similar to 
+var fn3 =function  (){
+    console.log("I Am function 2 ");
+}
+
+
+
+
 // we cant make any variable to function before it is  
 
 // in first PHASE or MEMORY ALLOCATION all variable defined with undefined 
 // Later on variable value get updated with deifined value 
 // it happens with var only 
+
+
+
+
+
+// insidwe source and scope 
+// everything will show 
+// In javascript everything consider as variable 
+
