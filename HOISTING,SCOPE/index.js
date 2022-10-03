@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+
 var a;
 console.log("0",a)
 
@@ -6,8 +14,6 @@ console.log("0",a)
 
 // in memory allocation phase all varible initialization with undeifne 
 // in 2 phase code / execution phase we get tje output 
-
-
 
 // alert("ajay kumar verma");
 
