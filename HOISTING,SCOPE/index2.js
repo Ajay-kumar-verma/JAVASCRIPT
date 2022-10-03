@@ -1,3 +1,5 @@
+// scope chaining and lexical Enviroment    
+
 
 function a(){
     var b=10;

@@ -31,3 +31,16 @@ ab();
 
 // where as if it not there in scope it show 
 // not defined ReferenceError
+
+
+
+
+
+
+
+// SyntaxError
+// if we redeclared the same variable 
+// with var we can declared     
+
+// TypeErro 
+// if we reAssign the value of const throw an Type Error
